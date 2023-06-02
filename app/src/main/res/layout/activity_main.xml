@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/operand1EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Enter operand 1" />
+
+    <EditText
+        android:id="@+id/operand2EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/operand1EditText"
+        android:inputType="numberDecimal"
+        android:hint="Enter operand 2" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/operand2EditText"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/subtractButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addButton"
+        android:text="Subtract" />
+
+    <Button
+        android:id="@+id/multiplyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subtractButton"
+        android:text="Multiply" />
+
+    <Button
+        android:id="@+id/divideButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/multiplyButton"
+        android:text="Divide" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divideButton"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
